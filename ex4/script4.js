@@ -10,13 +10,13 @@ function media() {
 
     console.log(resultado);
 
-   if(media > 59) {
+   if(media >= 60) {
      
     let resultado = document.querySelector('#resultado');
     resultado.innerHTML = `<h2><p>você já está na média: </p></h2>`;
 
    } else {
-        let sobra = 59 - media
+        let sobra = 60 - media
           
     let resultado = document.querySelector('#resultado');
     resultado.innerHTML = `<H2><p>Você ainda nâo está na média,ainda faltam ${sobra} pontos:</p></h2>`;
